@@ -1,0 +1,41 @@
+header {
+  background-color: #ff69b4;
+}
+* {
+  font-family: "Jost", sans-serif;
+}
+nav {
+  background-color: #ff69b4;
+  min-height: 110px;
+  max-width: 100%;
+}
+
+li span,
+li i {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+.navbar-brand {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.input-icon {
+  position: relative;
+}
+.input-icon input {
+  padding-left: 30px; /* Espaço para o ícone */
+}
+.input-icon i {
+  position: absolute;
+  left: 90%; /* Posição do ícone */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  color: #6c757d; /* Cor do ícone */
+}

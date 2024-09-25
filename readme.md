@@ -1,0 +1,3 @@
+- Retirar padding caso o butão apareça
+- Ajeitar o botao do menu na resposividade
+- discutir a margin da logo

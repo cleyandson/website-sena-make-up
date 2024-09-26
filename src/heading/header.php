@@ -6,8 +6,9 @@
                 <div class="d-flex align-items-center justify-content-center">
                     <form class="d-flex " role="search">
                         <div class="input-icon">
-                            <input class="form-control me-2" type="search" aria-label="Search">
-                            <i class="bi bi-search"></i>
+                            <input class="form-control me-2" id="inputSearch" placeholder="Pesquise um produto"
+                                aria-label="Busca">
+                            <i class="bi bi-search" id="iconSearch"></i>
                         </div>
                     </form>
                 </div>

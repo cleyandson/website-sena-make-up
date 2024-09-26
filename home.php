@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/heading/assets/css/header.css">
+    <link rel="stylesheet" href="./src/main/assets/css/main.css">
 </head>
 
 <body>
@@ -22,6 +23,7 @@
 
     </script>
     <script src="./src/heading/assets/js/header.js"></script>
+    <script src="./src/main/assets/js/main.js"></script>
 
 </body>
 

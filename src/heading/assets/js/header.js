@@ -16,17 +16,35 @@ document.getElementById("inputSearch").addEventListener("input", function () {
   }
 });
 
+document.getElementById("button-menu").addEventListener("click", function () {
+  const searchNavbar = document.getElementById("search-navbar");
+  const button = document.getElementById("button-menu");
+  const buttonExpanded = button.getAttribute("aria-expanded");
+
+  if (buttonExpanded === "true") {
+    searchNavbar.style.display = "none";
+    searchNavbar.classList.remove("d-flex");
+    return;
+  } else {
+    var largura = window.innerWidth;
+    if (largura > 768) {
+      searchNavbar.style.display = "block";
+      searchNavbar.classList.add("d-flex");
+    }
+  }
+});
+
 function verificarLarguraTela() {
   var largura = window.innerWidth;
-  const ul = document.getElementById("ul-navbar");
+  const searchNavbar = document.getElementById("search-navbar");
+  const button = document.getElementById("button-menu");
+  const buttonExpanded = button.getAttribute("aria-expanded");
+
   // Aqui você pode adicionar sua lógica específica
-  if (largura < 1200) {
+  if (largura < 768) {
     console.log("Tela pequena (mobile)");
-    ul.classList.remove("ms-auto");
-  } else {
-    if (!ul.classList.contains("ms-auto")) {
-      ul.classList.add("ms-auto");
-    }
+    searchNavbar.style.display = "none";
+    searchNavbar.classList.remove("d-flex");
   }
 }
 

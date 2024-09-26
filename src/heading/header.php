@@ -3,22 +3,29 @@
         <div class="container-fluid px-xl-5 mx-auto">
 
             <a class="navbar-brand" href="#">Sena MakeUP</a>
-            <form class="d-flex my-3 my-xl-0 w-xl-auto me-xl-auto">
+            <form id="search-navbar" class="d-flex my-3 my-xl-0  w-xl-auto me-xl-auto">
                 <div class="input-icon d-flex align-items-center w-100">
-                    <input class="form-control " id="inputSearch" placeholder="Buscar..." aria-label="Busca">
+                    <input class="form-control  " id="inputSearch" placeholder="Buscar..." aria-label="Busca">
                     <i class="bi bi-search" id="iconSearch"></i>
                 </div>
             </form>
 
             <!-- Botão de alternância para dispositivos móveis -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="button-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center w-100">
                     <!-- Barra de busca -->
+                    <form class="d-flex my-3 my-xl-0 w-50 w-xl-auto me-xl-auto">
+                        <div class="input-icon d-flex align-items-center w-100">
+                            <input class="form-control  " id="inputSearch" placeholder="Buscar..." aria-label="Busca">
+                            <i class="bi bi-search" id="iconSearch"></i>
+                        </div>
+                    </form>
 
 
                     <!-- Itens do menu -->

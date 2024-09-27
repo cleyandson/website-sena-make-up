@@ -3,6 +3,8 @@
         <div class="container-fluid px-xl-5 mx-auto">
 
             <a class="navbar-brand" href="#">Sena MakeUP</a>
+
+
             <form id="search-navbar" class="d-flex my-3 my-xl-0  w-xl-auto me-xl-auto">
                 <div class="input-icon d-flex align-items-center w-100">
                     <input class="form-control  " id="inputSearch" placeholder="Buscar..." aria-label="Busca">
@@ -20,9 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center w-100">
                     <!-- Barra de busca -->
-                    <form class="d-flex my-3 my-xl-0 w-50 w-xl-auto me-xl-auto">
+                    <form id="input-search-secondary" class="d-flex my-3 my-xl-0 w-100  me-xl-auto">
                         <div class="input-icon d-flex align-items-center w-100">
-                            <input class="form-control  " id="inputSearch" placeholder="Buscar..." aria-label="Busca">
+                            <input class="form-control w-80" id="inputSearch" placeholder="Buscar..."
+                                aria-label="Busca">
                             <i class="bi bi-search" id="iconSearch"></i>
                         </div>
                     </form>

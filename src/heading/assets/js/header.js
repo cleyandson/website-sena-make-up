@@ -27,6 +27,10 @@ document.getElementById("button-menu").addEventListener("click", function () {
     return;
   } else {
     var largura = window.innerWidth;
+    console.log("oi");
+    console.log(largura);
+    searchNavbar.style.display = "block";
+    searchNavbar.classList.add("d-flex");
     if (largura > 768) {
       searchNavbar.style.display = "block";
       searchNavbar.classList.add("d-flex");
@@ -36,20 +40,21 @@ document.getElementById("button-menu").addEventListener("click", function () {
 
 function verificarLarguraTela() {
   var largura = window.innerWidth;
-  const searchNavbar = document.getElementById("search-navbar");
+  const searchNavbar = document.getElementById("input-search-secondary");
   const button = document.getElementById("button-menu");
   const buttonExpanded = button.getAttribute("aria-expanded");
-
   // Aqui você pode adicionar sua lógica específica
-  if (largura < 768) {
-    console.log("Tela pequena (mobile)");
-    searchNavbar.style.display = "none";
+  if (largura > 1199) {
     searchNavbar.classList.remove("d-flex");
+    searchNavbar.style.display = "none";
+  } else {
+    searchNavbar.style.display = "block";
+    searchNavbar.classList.add("d-flex");
   }
 }
 
 // Chame a função ao carregar a página
 window.onload = verificarLarguraTela;
+window.onresize = verificarLarguraTela;
 
 // Chame a função ao redimensionar a janela
-window.onresize = verificarLarguraTela;

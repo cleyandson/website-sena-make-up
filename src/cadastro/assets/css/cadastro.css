@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.box-main {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 100px 40px;
+}
+
+.new-users {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 28%;
+}
+.tittle-box {
+  text-align: center;
+  padding: 4px 10px;
+  border-bottom: 2px solid #999999;
+}
+
+.new-users:last-child .tittle-box {
+  border-bottom: none;
+}
+.tittle-box h2 {
+  color: #ff69b4;
+  font-size: 28px;
+}
+.tittle-box p {
+  font-size: 16px;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.insert-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.insert-box input {
+  height: 38px;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  outline: none;
+}
+
+.new-users button {
+  height: 38px;
+  width: 60%;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff69b4;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.box-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Extra Small (Menos de 576px) */
+@media (max-width: 575.98px) {
+  /* Estilos para telas menores que 576px */
+}
+
+/* Small (576px e acima) */
+@media (min-width: 576px) {
+  /* Estilos para telas a partir de 576px */
+}
+
+/* Medium (768px e acima) */
+@media (min-width: 768px) {
+  /* Estilos para telas a partir de 768px */
+}
+
+/* Large (992px e acima) */
+@media (min-width: 992px) {
+  /* Estilos para telas a partir de 992px */
+}
+
+/* Extra Large (1200px e acima) */
+@media (min-width: 1200px) {
+  /* Estilos para telas a partir de 1200px */
+}
+
+/* Extra Extra Large (1400px e acima) */
+@media (min-width: 1400px) {
+  /* Estilos para telas a partir de 1400px */
+}

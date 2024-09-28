@@ -59,3 +59,21 @@ footer > p {
   margin: 0;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+    gap: 34px;
+  }
+  footer > p {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 768px) {
+  .info-box {
+    width: 270px;
+  }
+}

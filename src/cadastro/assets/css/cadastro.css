@@ -4,8 +4,8 @@ html {
 
 .box-main {
   display: flex;
-  justify-content: space-evenly;
-  height: 100vh;
+  height: auto;
+  justify-content: space-between;
   padding: 100px 40px;
 }
 
@@ -41,13 +41,23 @@ html {
 .insert-box {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .insert-box input {
   height: 38px;
   border: 1px solid #999999;
   border-radius: 10px;
+  padding: 14px;
   outline: none;
+}
+
+.icon-eye {
+  position: absolute;
+  top: 72%; /* Centraliza verticalmente o ícone no input */
+  right: 10px; /* Posiciona o ícone à direita */
+  transform: translateY(-50%); /* Ajusta a centralização perfeita */
+  cursor: pointer;
 }
 
 .new-users button {
@@ -67,32 +77,73 @@ html {
   justify-content: center;
 }
 
-/* Extra Small (Menos de 576px) */
 @media (max-width: 575.98px) {
-  /* Estilos para telas menores que 576px */
+  .new-users {
+    min-width: 150px;
+  }
+  .new-users:first-child .box-form {
+    margin-top: 50px;
+    width: 90vw;
+  }
+
+  .new-users:first-child {
+    gap: 40px;
+  }
+
+  .new-users:last-child {
+    gap: 2px;
+  }
+
+  .new-users:last-child .box-button {
+    position: relative;
+    right: 26px;
+    width: 200px;
+  }
+  .new-users:last-child button {
+    padding: 8px;
+  }
+
+  .new-users button {
+    font-size: 12px;
+  }
+  .tittle-box {
+    padding: 0px;
+    text-align: left;
+    border: none;
+  }
+
+  .tittle-box h2 {
+    font-size: 20px;
+  }
 }
 
-/* Small (576px e acima) */
-@media (min-width: 576px) {
-  /* Estilos para telas a partir de 576px */
+@media (max-width: 768px) {
+  .box-main {
+    padding: 20px 8px;
+  }
+  .new-users {
+    width: 44%;
+  }
 }
 
-/* Medium (768px e acima) */
 @media (min-width: 768px) {
-  /* Estilos para telas a partir de 768px */
+  .box-main {
+    justify-content: space-evenly;
+  }
 }
 
-/* Large (992px e acima) */
-@media (min-width: 992px) {
-  /* Estilos para telas a partir de 992px */
+@media (max-width: 992px) {
+  .new-users {
+    width: 44%;
+  }
+  .new-users button {
+    padding: 0 20px;
+    width: fit-content;
+  }
 }
 
-/* Extra Large (1200px e acima) */
 @media (min-width: 1200px) {
-  /* Estilos para telas a partir de 1200px */
 }
 
-/* Extra Extra Large (1400px e acima) */
 @media (min-width: 1400px) {
-  /* Estilos para telas a partir de 1400px */
 }

@@ -42,10 +42,12 @@
                     <div class="insert-box">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha">
+                        <span class="icon-eye"><i class="bi bi-eye"></i></span>
                     </div>
                     <div class="insert-box">
                         <label for="senha">Confirmar senha</label>
                         <input type="password" name="confirmSenha">
+                        <span class="icon-eye"><i class="bi bi-eye"></i></span>
                     </div>
                     <div class="box-button">
                         <button>Criar uma conta</button>

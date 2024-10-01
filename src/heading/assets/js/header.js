@@ -1,3 +1,27 @@
+document.getElementById("buttonMenu").addEventListener("click", function () {
+  const boxSearch = document.getElementById("boxSearch");
+  const boxList = document.getElementById("boxList");
+  const iconMenu = document.getElementById("iconMenu");
+
+  const styleBoxSearch = window.getComputedStyle(boxSearch);
+  if (styleBoxSearch.display === "none") {
+    boxSearch.style.display = "block";
+    boxList.style.display = "none";
+    boxList.classList.remove("box-list-open");
+    boxList.classList.add("box-list");
+    iconMenu.classList.remove("bi-x-lg");
+    iconMenu.classList.add("bi-list");
+  } else {
+    //Aparece a lista e some a barra de pesquisa
+    boxSearch.style.display = "none";
+    boxList.style.display = "block";
+    boxList.classList.remove("box-list");
+    boxList.classList.add("box-list-open");
+    iconMenu.classList.remove("bi-list");
+    iconMenu.classList.add("bi-x-lg");
+  }
+});
+
 document.getElementById("inputSearch").addEventListener("input", function () {
   const letra = document.getElementById("inputSearch").value;
 
@@ -16,45 +40,29 @@ document.getElementById("inputSearch").addEventListener("input", function () {
   }
 });
 
-document.getElementById("button-menu").addEventListener("click", function () {
-  const searchNavbar = document.getElementById("search-navbar");
-  const button = document.getElementById("button-menu");
-  const buttonExpanded = button.getAttribute("aria-expanded");
-
-  if (buttonExpanded === "true") {
-    searchNavbar.style.display = "none";
-    searchNavbar.classList.remove("d-flex");
-    return;
-  } else {
-    var largura = window.innerWidth;
-    console.log("oi");
-    console.log(largura);
-    searchNavbar.style.display = "block";
-    searchNavbar.classList.add("d-flex");
-    if (largura > 768) {
-      searchNavbar.style.display = "block";
-      searchNavbar.classList.add("d-flex");
-    }
-  }
-});
-
 function verificarLarguraTela() {
   var largura = window.innerWidth;
-  const searchNavbar = document.getElementById("input-search-secondary");
-  const button = document.getElementById("button-menu");
-  const buttonExpanded = button.getAttribute("aria-expanded");
+  const boxList = document.getElementById("boxList");
+  const iconMenu = document.getElementById("iconMenu");
+  const boxSearch = document.getElementById("boxSearch");
+
   // Aqui você pode adicionar sua lógica específica
-  if (largura > 1199) {
-    searchNavbar.classList.remove("d-flex");
-    searchNavbar.style.display = "none";
+  if (largura > 991) {
+    if (boxList.classList.contains("box-list-open")) {
+      boxSearch.style.display = "block";
+      boxList.classList.remove("box-list-open");
+      boxList.classList.add("box-list");
+      iconMenu.classList.remove("bi-x-lg");
+      iconMenu.classList.add("bi-list");
+    }
+    boxList.style.display = "block";
   } else {
-    searchNavbar.style.display = "block";
-    searchNavbar.classList.add("d-flex");
+    if (!iconMenu.classList.contains("bi-x-lg")) {
+      boxList.style.display = "none";
+    }
   }
 }
 
 // Chame a função ao carregar a página
 window.onload = verificarLarguraTela;
 window.onresize = verificarLarguraTela;
-
-// Chame a função ao redimensionar a janela

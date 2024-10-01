@@ -1,66 +1,56 @@
 <header>
-    <nav class="navbar navbar-expand-xl navbar-light  ">
-        <div class="container-fluid px-xl-5 mx-auto">
-
-            <a class="navbar-brand" href="#">Sena MakeUP</a>
-
-
-            <form id="search-navbar" class="d-flex my-3 my-xl-0  w-xl-auto me-xl-auto">
-                <div class="input-icon d-flex align-items-center w-100">
-                    <input class="form-control  " id="inputSearch" placeholder="Buscar..." aria-label="Busca">
-                    <i class="bi bi-search" id="iconSearch"></i>
-                </div>
-            </form>
-
-            <!-- Botão de alternância para dispositivos móveis -->
-            <button id="button-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center w-100">
-                    <!-- Barra de busca -->
-                    <form id="input-search-secondary" class="d-flex my-3 my-xl-0 w-100  me-xl-auto">
-                        <div class="input-icon d-flex align-items-center w-100">
-                            <input class="form-control w-80" id="inputSearch" placeholder="Buscar..."
-                                aria-label="Busca">
-                            <i class="bi bi-search" id="iconSearch"></i>
-                        </div>
-                    </form>
-
-
-                    <!-- Itens do menu -->
-                    <ul class="navbar-nav ms-auto  d-flex gap-3 mt-3 mt-xl-0" id="ul-navbar">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-question-circle"></i>
-                                <span class="ms-1">Atendimento</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cadastro.php">
-                                <i class="bi bi-person"></i>
-                                <span class="ms-1">Minha Conta</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-heart"></i>
-                                <span class="ms-1">Favoritos</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-bag"></i>
-                                <span class="ms-1">Sacola</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
+    <nav class="navbar">
+        <div class="box-navbar">
+            <div class="box-soon">
+                <a href="home.php">
+                    <h1>Sena MakeUP</h1>
+                </a>
             </div>
+
+            <div id="boxSearch" class="box-search">
+                <form action="">
+                    <div class="box-input">
+                        <input id="inputSearch" type="text" class="input-search">
+                        <i class="bi bi-search" id="iconSearch"></i>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box-button-menu">
+                <button id="buttonMenu"><i id="iconMenu" class="bi bi-list"></i></button>
+            </div>
+
+            <div id="boxList" class="box-list">
+                <ul>
+                    <li class="item-list">
+                        <a href="">
+                            <img src="../../../website-sena-make-up/src/heading/img/Desktop/atendimento.png" alt="">
+                            <span class="ms-1">Atendimento</span>
+                        </a>
+                    </li>
+                    <li class="item-list">
+                        <a href="">
+                            <img src="../../../website-sena-make-up/src/heading/img/Desktop/conta.png" alt="">
+                            <span class="ms-1">Minha Conta</span>
+                        </a>
+                    </li>
+                    <li class="item-list">
+                        <a href="">
+                            <img src="../../../website-sena-make-up/src/heading/img/Desktop/Coração.png" alt="">
+                            <span class="ms-1">Favoritos</span>
+                        </a>
+                    </li>
+                    <li class="item-list">
+                        <a href="">
+                            <img src="../../../website-sena-make-up/src/heading/img/Desktop/icons8-vilta-frontal-da-bolsa-50.png"
+                                alt="">
+                            <span class="ms-1">Sacola</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
     </nav>
 </header>

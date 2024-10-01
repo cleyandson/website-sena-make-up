@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./src/heading/assets/css/header.css">
     <link rel="stylesheet" href="./src/footer/assets/css/footer.css">
-    <link rel="stylesheet" href="./src/cadastro/assets/css/cadastro.css">
+    <link rel="stylesheet" href="./src/login/assets/css/login.css">
 </head>
 
 <body>
@@ -21,36 +21,27 @@
     <main class="box-main">
         <div class="new-users">
             <div class="tittle-box">
-                <h2>Novos Clientes</h2>
-                <p>Se você não possui uma conta, cadastre-se através do formulário abaixo.</p>
+                <h2>Clientes Cadastrados</h2>
+                <p>Se você possui uma conta conosco, acesse abaixo com seu e-mail e senha.</p>
             </div>
             <div class="box-form">
                 <form action="#" class="form-register">
 
-                    <div class="insert-box">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" name="name" class="input-text">
-                    </div>
+
                     <div class="insert-box">
                         <label for="email">E-mail</label>
                         <input type="email" name="email">
                     </div>
-                    <div class="insert-box">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" name="telefone">
-                    </div>
+
                     <div class="insert-box">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha">
                         <span class="icon-eye"><i class="bi bi-eye"></i></span>
+                        <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <div class="insert-box">
-                        <label for="senha">Confirmar senha</label>
-                        <input type="password" name="confirmSenha">
-                        <span class="icon-eye"><i class="bi bi-eye"></i></span>
-                    </div>
+
                     <div class="box-button">
-                        <button>Criar uma conta</button>
+                        <button><a href="">Acessar minha conta</a></button>
                     </div>
 
                 </form>
@@ -59,12 +50,13 @@
 
         <div class="new-users">
             <div class="tittle-box">
-                <h2>Clientes Cadastrados</h2>
-                <p>Se você já possui uma conta cadastrada, clique no botão
-                    abaixo para acessar sua conta.</p>
+                <h2>Novos Clientes</h2>
+                <p>Ao criar uma conta em nossa loja, você será capaz de se mover através do processo de compra
+                    rapidamente, armazenar múltiplos endereços de envio, ver e rastrear seus pedidos em sua conta e
+                    muito mais.</p>
             </div>
             <div class="box-button">
-                <a href="login.php"><button>Acessar minha conta</button></a>
+                <a href="cadastro.php"><button>Criar uma conta</button></a>
             </div>
         </div>
     </main>

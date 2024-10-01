@@ -5,7 +5,7 @@ html {
 .box-main {
   display: flex;
   height: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 100px 40px;
 }
 
@@ -15,15 +15,16 @@ html {
   gap: 20px;
   width: 28%;
 }
+
 .tittle-box {
   text-align: center;
-  padding: 4px 10px;
   border-bottom: 2px solid #999999;
 }
 
 .new-users:last-child .tittle-box {
   border-bottom: none;
 }
+
 .tittle-box h2 {
   color: #ff69b4;
   font-size: 28px;
@@ -52,9 +53,17 @@ html {
   outline: none;
 }
 
+.insert-box a {
+  color: #ff69b4;
+  text-align: end;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .icon-eye {
   position: absolute;
-  top: 72%; /* Centraliza verticalmente o ícone no input */
+  top: 54%; /* Centraliza verticalmente o ícone no input */
   right: 10px; /* Posiciona o ícone à direita */
   transform: translateY(-50%); /* Ajusta a centralização perfeita */
   cursor: pointer;
@@ -81,12 +90,17 @@ html {
   width: auto;
 }
 
+.box-button a {
+  color: #fff;
+  text-decoration: none;
+  height: auto;
+}
 @media (max-width: 575.98px) {
   .new-users {
     min-width: 150px;
   }
   .new-users:first-child .box-form {
-    margin-top: 50px;
+    margin-top: 130px;
     width: 90vw;
   }
 
@@ -132,7 +146,7 @@ html {
 
 @media (min-width: 768px) {
   .box-main {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 

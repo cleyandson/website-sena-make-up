@@ -23,12 +23,11 @@
 }
 
 .box-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   gap: 12px;
   margin-top: 30px;
-  flex-wrap: wrap;
 }
 
 .box-favorites {
@@ -41,11 +40,11 @@
 
 .box-product {
   display: flex;
-  flex: 1 0 32%;
   align-items: center;
   flex-direction: column;
   height: auto;
-  width: 300px;
+  width: auto;
+
   border: 4px solid rgb(255, 255, 255);
   border-radius: 4px;
   padding: 0px;
@@ -122,24 +121,38 @@
 }
 
 @media (min-width: 576px) {
-  .box-product {
-    flex: 1 1 43%;
-    background-color: red;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .box-product {
-    background-color: #ff69b4;
+  .box-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-}
-@media (min-width: 1199px) {
   .box-content {
+    grid-template-columns: repeat(4, 210px);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .box-content {
+    grid-template-columns: repeat(4, 260px);
+  }
+  .box-product {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  .box-content {
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
   }
 }
 

@@ -12,11 +12,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./src/heading/assets/css/header.css">
     <link rel="stylesheet" href="./src/main/assets/css/main.css">
+    <link rel="stylesheet" href="./src/footer/assets/css/footer.css">
+
 </head>
 
 <body>
     <?php include './src/heading/header.php'; ?>
     <?php include './src/main/main.php'; ?>
+    <?php include './src/footer/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

@@ -151,7 +151,7 @@
 .text-description-product {
   display: none;
   opacity: 1; /* Inicialmente visível */
-  max-height: 100px; /* Altura máxima inicial */
+  max-height: 104px; /* Altura máxima inicial */
   transition: opacity 0.5s ease, max-height 0.5s ease; /* Transições para opacidade e max-height */
   overflow: hidden; /* Para evitar que o conteúdo apareça fora da altura definida */
 }

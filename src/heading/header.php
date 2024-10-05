@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="item-list">
-                        <a href="">
+                        <a href="cadastro.php">
                             <img src="../../../website-sena-make-up/src/heading/img/Desktop/conta.png" alt="">
                             <span class="ms-1">Minha Conta</span>
                         </a>

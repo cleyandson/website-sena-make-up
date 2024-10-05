@@ -25,7 +25,7 @@
 
     </script>
     <script src="./src/heading/assets/js/header.js"></script>
-    <script src="./src/main/assets/js/main.js"></script>
+
 
 
 </body>

@@ -9,6 +9,42 @@
   max-height: 576px;
 }
 
+.carousel-control-prev {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 5%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  opacity: 1; /* Elemento invisível inicialmente */
+  transition: opacity 0.5s ease; /* Transição suave da opacidade */
+  transform: translateY(-50%);
+}
+.carousel-control-next {
+  align-items: center;
+  top: 50%;
+  position: absolute;
+  right: 5%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transform: translateY(-50%);
+}
+
+.box-carousel:hover .carousel-control-prev,
+.box-carousel:hover .carousel-control-next {
+  opacity: 1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.button-change-img-banner {
+  color: #000;
+}
 .box-main {
   display: flex;
   flex-direction: column;
@@ -32,7 +68,6 @@
 .box-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   gap: 12px;
   margin-top: 30px;
 }
@@ -49,15 +84,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: auto;
+  height: fit-content;
   width: auto;
-
   border: 4px solid rgb(255, 255, 255);
   border-radius: 4px;
   padding: 0px;
-  gap: 10px;
+  gap: 8px;
   box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .box-product > a {
@@ -76,6 +111,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: opacity 0.5s ease;
 }
 
 .box-description-product h5 {
@@ -92,7 +128,7 @@
 .box-description-product .box-price {
   display: flex;
   gap: 8px;
-  margin: 10px 0;
+  margin: 0px 0;
   align-items: center;
 }
 
@@ -112,8 +148,17 @@
   text-align: start;
 }
 
-.box-button-buy {
+.text-description-product {
   display: none;
+  opacity: 1; /* Inicialmente visível */
+  max-height: 100px; /* Altura máxima inicial */
+  transition: opacity 0.5s ease, max-height 0.5s ease; /* Transições para opacidade e max-height */
+  overflow: hidden; /* Para evitar que o conteúdo apareça fora da altura definida */
+}
+
+.box-button-buy {
+  display: flex;
+  justify-content: center;
   width: 80%;
   background-color: #ff69b4;
   border-radius: 4px;
@@ -155,8 +200,43 @@
     align-content: center;
     gap: 20px;
   }
+  .text-description-product {
+    display: block;
+  }
+  .box-button-buy {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .box-product {
+    transition: height 1s ease;
+  }
+
+  .box-product:hover .text-description-product {
+    opacity: 0; /* Esconde o texto ao passar o mouse */
+    max-height: 0; /* Diminui a altura para 0 */
+  }
+  .box-product:hover .box-button-buy {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media (min-width: 1200px) {
+  .carousel-control-next {
+    opacity: 0;
+  }
+
+  .carousel-control-prev {
+    opacity: 0;
+  }
+
+  .carousel-control-prev:focus,
+  .carousel-control-next:focus {
+    opacity: 0;
+    outline: none;
+  }
+
   .box-content {
     grid-template-columns: repeat(4, 260px);
   }

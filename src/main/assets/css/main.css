@@ -1,6 +1,5 @@
 * {
-
-  border: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -183,8 +182,26 @@
   object-fit: cover;
 }
 
-@media (min-width: 576px) {
-}
+
+@media (max-width: 576px) {
+  .box-button-buy {
+    width: auto;
+    font-size: 12px;
+    padding: 0px 0px;
+    height: auto;
+    width: auto;
+    margin-bottom: 4px;
+  }
+
+  .button-buy {
+    border-radius: 6px;
+    padding: 4px;
+  }
+
+  .box-favorites {
+    margin-left: 84%;
+  }
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -252,25 +269,5 @@
     align-content: center;
     gap: 30px;
   }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-  font-family: "Jost", sans-serif;
-}
-
-.btn-buy {
-  display: none;
-  background-color: #ff69b4;
-  color: #fff;
-  font-weight: bold;
-  outline: none; /* Remove a borda de foco */
-  border: none;
-  border-radius: 2px;
-  width: 100%;
-}
-
-.btn-buy:hover {
-  background-color: #ff69b4;
 }
 

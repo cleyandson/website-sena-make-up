@@ -1,3 +1,4 @@
+
 document.getElementById("buttonMenu").addEventListener("click", function () {
   const boxSearch = document.getElementById("boxSearch");
   const boxList = document.getElementById("boxList");
@@ -22,6 +23,8 @@ document.getElementById("buttonMenu").addEventListener("click", function () {
   }
 });
 
+
+
 document.getElementById("inputSearch").addEventListener("input", function () {
   const letra = document.getElementById("inputSearch").value;
 
@@ -39,6 +42,7 @@ document.getElementById("inputSearch").addEventListener("input", function () {
     icon.classList.add("bi-search");
   }
 });
+
 
 function verificarLarguraTela() {
   var largura = window.innerWidth;
@@ -66,3 +70,4 @@ function verificarLarguraTela() {
 // Chame a função ao carregar a página
 window.onload = verificarLarguraTela;
 window.onresize = verificarLarguraTela;
+

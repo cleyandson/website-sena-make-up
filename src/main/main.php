@@ -54,7 +54,7 @@
                             sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                     </div>
                     <div class="box-button-buy">
-                        <a href="#">
+                        <a href="produto.php">
                             <button class="button-buy">Comprar Agora</button>
                         </a>
                     </div>
@@ -84,7 +84,7 @@
                             sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                     </div>
                     <div class="box-button-buy">
-                        <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                        <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                     </div>
                 </a>
             </div>
@@ -112,7 +112,7 @@
                             sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                     </div>
                     <div class="box-button-buy">
-                        <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                        <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                     </div>
                 </a>
             </div>
@@ -140,7 +140,7 @@
                             sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                     </div>
                     <div class="box-button-buy">
-                        <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                        <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                     </div>
                 </a>
             </div>
@@ -155,7 +155,7 @@
         <h2>Mais Vendidos</h2>
 
         <div class="box-content">
-            <div class="box-product">
+            <div class="box-product" onclick="location.href ='produto.php'">
                 <div class="box-favorites">
                     <button><i class="bi bi-heart"></i></button>
                 </div>
@@ -176,11 +176,11 @@
                         sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                 </div>
                 <div class="box-button-buy">
-                    <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                 </div>
             </div>
 
-            <div class="box-product">
+            <div class="box-product" onclick="location.href ='produto.php'">
                 <div class="box-favorites">
                     <button><i class="bi bi-heart"></i></button>
                 </div>
@@ -201,11 +201,11 @@
                         sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                 </div>
                 <div class="box-button-buy">
-                    <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                 </div>
             </div>
 
-            <div class="box-product">
+            <div class="box-product" onclick="location.href ='produto.php'">
                 <div class="box-favorites">
                     <button><i class="bi bi-heart"></i></button>
                 </div>
@@ -226,11 +226,11 @@
                         sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                 </div>
                 <div class="box-button-buy">
-                    <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                 </div>
             </div>
 
-            <div class="box-product">
+            <div class="box-product" onclick="location.href ='produto.php'">
                 <div class="box-favorites">
                     <button><i class="bi bi-heart"></i></button>
                 </div>
@@ -251,7 +251,7 @@
                         sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                 </div>
                 <div class="box-button-buy">
-                    <a href="#"><button class="button-buy">Comprar Agora</button></a>
+                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
                 </div>
             </div>
         </div>

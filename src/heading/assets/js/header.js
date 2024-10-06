@@ -1,29 +1,41 @@
-
 document.getElementById("buttonMenu").addEventListener("click", function () {
   const boxSearch = document.getElementById("boxSearch");
   const boxList = document.getElementById("boxList");
   const iconMenu = document.getElementById("iconMenu");
-
+  iconMenu.classList.add("hidden");
   const styleBoxSearch = window.getComputedStyle(boxSearch);
   if (styleBoxSearch.display === "none") {
     boxSearch.style.display = "block";
-    boxList.style.display = "none";
     boxList.classList.remove("box-list-open");
     boxList.classList.add("box-list");
-    iconMenu.classList.remove("bi-x-lg");
-    iconMenu.classList.add("bi-list");
+    setTimeout(() => {
+      if (iconMenu.classList.contains("bi-list")) {
+        iconMenu.classList.remove("bi-list");
+        iconMenu.classList.add("bi-x-lg");
+      } else {
+        iconMenu.classList.remove("bi-x-lg");
+        iconMenu.classList.add("bi-list");
+      }
+      iconMenu.classList.remove("hidden");
+    }, 300); // Tempo igual à duração da transição
   } else {
     //Aparece a lista e some a barra de pesquisa
     boxSearch.style.display = "none";
-    boxList.style.display = "block";
+
     boxList.classList.remove("box-list");
     boxList.classList.add("box-list-open");
-    iconMenu.classList.remove("bi-list");
-    iconMenu.classList.add("bi-x-lg");
+    setTimeout(() => {
+      if (iconMenu.classList.contains("bi-list")) {
+        iconMenu.classList.remove("bi-list");
+        iconMenu.classList.add("bi-x-lg");
+      } else {
+        iconMenu.classList.remove("bi-x-lg");
+        iconMenu.classList.add("bi-list");
+      }
+      iconMenu.classList.remove("hidden");
+    }, 200);
   }
 });
-
-
 
 document.getElementById("inputSearch").addEventListener("input", function () {
   const letra = document.getElementById("inputSearch").value;
@@ -42,7 +54,6 @@ document.getElementById("inputSearch").addEventListener("input", function () {
     icon.classList.add("bi-search");
   }
 });
-
 
 function verificarLarguraTela() {
   var largura = window.innerWidth;
@@ -68,6 +79,5 @@ function verificarLarguraTela() {
 }
 
 // Chame a função ao carregar a página
-window.onload = verificarLarguraTela;
-window.onresize = verificarLarguraTela;
-
+//window.onload = verificarLarguraTela;
+//window.onresize = verificarLarguraTela;

@@ -27,7 +27,7 @@
         <section>
             <div class="box-info-product">
                 <div class="box-image-product">
-                    <img src="../website-sena-make-up/src/produto/assets/img/Desktop/Produto.png" alt="">
+                    <img src="../website-sena-make-up/src/produto/assets/img/Produto.png" alt="">
                 </div>
                 <div class="box-description-product-buy">
                     <h1>Hidratante de Melância - Porán</h1>

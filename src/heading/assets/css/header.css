@@ -200,12 +200,16 @@ li i {
     min-width: auto;
   }
   .box-list {
-    display: flex;
+    position: relative;
+    opacity: 1;
+    max-height: max-content;
+    align-items: center;
   }
   .box-button-menu {
     display: none;
   }
   .navbar {
+    align-items: center;
     justify-content: space-around;
   }
 

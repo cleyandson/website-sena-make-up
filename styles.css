@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  font-weight: 600;
+}
+
+.cart-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: #f9f9f9;
+}
+
+.product-image img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cart-item:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-details {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.product-details h2 {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.product-details p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #666;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.remove-item button {
+  background-color: transparent;
+  color: #e74c3c;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.remove-item button:hover {
+  color: #c0392b;
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.cart-summary h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.checkout-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #2ecc71;
+  transform: scale(1.02);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-details {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .remove-item {
+    margin-top: 10px;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

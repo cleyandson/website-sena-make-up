@@ -1,0 +1,88 @@
+section {
+  width: auto;
+  height: auto;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background: rgb(251, 251, 251);
+}
+
+thead {
+  padding: 10px;
+}
+
+thead,
+tbody {
+  width: 100%;
+  border-top: 1px solid #ff69b475;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0px;
+  width: 12vw;
+}
+
+td {
+  align-self: center;
+}
+
+th:first-child,
+td:first-child {
+  min-width: 40vw;
+}
+
+td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.box-image-product {
+  width: 200px; /* Define a largura desejada */
+  height: auto; /* Altura ajusta automaticamente */
+  overflow: hidden; /* Oculta a parte extra da imagem */
+}
+
+.box-image-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta o conteúdo visível sem distorcer */
+  display: block;
+}
+
+.box-description-product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-description-product > p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff69b4;
+}
+
+.box-description-product p {
+  font-size: 12px;
+  margin: 0;
+}
+
+caption {
+  caption-side: top; /* Garante que o título esteja no topo */
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  color: #333;
+  text-align: center;
+}

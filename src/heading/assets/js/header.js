@@ -79,5 +79,5 @@ function verificarLarguraTela() {
 }
 
 // Chame a função ao carregar a página
-//window.onload = verificarLarguraTela;
+//window.onload = verificarLarguraTela;/
 //window.onresize = verificarLarguraTela;

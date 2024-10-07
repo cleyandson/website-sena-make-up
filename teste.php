@@ -4,38 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transição com JS</title>
-    <style>
-    /* Caixa inicial */
-    .box {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        transition: all 0.5s ease;
-        /* Transição aplicada a todas as propriedades */
-    }
-
-    /* Classe que será adicionada/alterada */
-    .box.expand {
-        width: 200px;
-        background-color: blue;
-    }
-    </style>
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div class="box"></div>
-    <button id="toggle">Toggle Class</button>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
 
-    <script>
-    const box = document.querySelector('.box');
-    const button = document.getElementById('toggle');
+    <section class="cart-container">
+        <div class="cart-item">
+            <div class="product-image">
+                <img src="produto1.jpg" alt="Produto 1">
+            </div>
+            <div class="product-details">
+                <h2>Produto Elegante 1</h2>
+                <p>Quantidade: <input type="number" value="1" min="1"></p>
+                <p class="price">R$ 100,00</p>
+            </div>
+            <div class="remove-item">
+                <button>✕</button>
+            </div>
+        </div>
 
-    button.addEventListener('click', function() {
-        box.classList.toggle('expand'); // Adiciona ou remove a classe 'expand'
-    });
-    </script>
+        <!-- Exemplo de outro item -->
+        <div class="cart-item">
+            <div class="product-image">
+                <img src="produto2.jpg" alt="Produto 2">
+            </div>
+            <div class="product-details">
+                <h2>Produto Elegante 2</h2>
+                <p>Quantidade: <input type="number" value="2" min="1"></p>
+                <p class="price">R$ 200,00</p>
+            </div>
+            <div class="remove-item">
+                <button>✕</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: R$ 500,00</h3>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </section>
 
 </body>
 

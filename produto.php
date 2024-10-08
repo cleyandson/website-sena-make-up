@@ -39,7 +39,7 @@
                         <p>R$16,63</p>
                         <p>3x R$5,54</p>
                     </div>
-                    <a href="carrinho.php" class="button-buy">Comprar</a>
+                    <a href="sacola.php" class="button-buy">Comprar</a>
                     <div class="box-share-product">
                         <p>Compartilhe</p>
                         <div class="box-icons-share">

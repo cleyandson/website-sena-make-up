@@ -17,13 +17,15 @@
 
 <body>
     <?php include './src/heading/header.php'; ?>
+    <?php include './src/carrinho/carrinho.php'; ?>
     <?php include './src/footer/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="./src/heading/assets/js/header.js"></script>
-
+    <script src="./src/carrinho/assets/js/carrinho.js"></script>
 </body>
 
 </html>

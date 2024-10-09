@@ -1,54 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fieldset Entre a Borda</title>
+    <style>
+    fieldset {
+        border: 2px solid #007bff;
+        /* Borda interna do fieldset */
+        border-radius: 8px;
+        /* Bordas arredondadas para o fieldset */
+        padding: 10px;
+        background-color: white;
+        /* Cor de fundo do fieldset */
+    }
+
+    legend {
+        font-weight: bold;
+        color: #007bff;
+        /* Cor do texto da legenda */
+    }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Carrinho de Compras</h1>
-    </header>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
 
-    <section class="cart-container">
-        <div class="cart-item">
-            <div class="product-image">
-                <img src="produto1.jpg" alt="Produto 1">
-            </div>
-            <div class="product-details">
-                <h2>Produto Elegante 1</h2>
-                <p>Quantidade: <input type="number" value="1" min="1"></p>
-                <p class="price">R$ 100,00</p>
-            </div>
-            <div class="remove-item">
-                <button>✕</button>
-            </div>
-        </div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
 
-        <!-- Exemplo de outro item -->
-        <div class="cart-item">
-            <div class="product-image">
-                <img src="produto2.jpg" alt="Produto 2">
-            </div>
-            <div class="product-details">
-                <h2>Produto Elegante 2</h2>
-                <p>Quantidade: <input type="number" value="2" min="1"></p>
-                <p class="price">R$ 200,00</p>
-            </div>
-            <div class="remove-item">
-                <button>✕</button>
-            </div>
-        </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+            </fieldset>
+        </form>
+    </div>
 
-        <div class="cart-summary">
-            <h3>Total: R$ 500,00</h3>
-            <button class="checkout-btn">Finalizar Compra</button>
-        </div>
-    </section>
+
+
+    <div class="box-location-icon">
+        <img src="../../../website-sena-make-up/src/carrinho/assets/img/icons8-vilta-frontal-da-bolsa-50 (1) 1.png"
+            alt="...">
+    </div>
+    <hr class="first-hr" style="background: #7FD8E7;">
+    <div class="box-location-icon icon">
+        <img src="../../../website-sena-make-up/src/carrinho/assets/img/icons8-home-50 1.png" alt="...">
+    </div>
+    <hr>
+    <div class="box-location-icon">
+        <img src="../../../website-sena-make-up/src/carrinho/assets/img/icons8-debit-card-50 1.png" alt="...">
+    </div>
+    <hr>
+    <div class="box-location-icon">
+        <img src="../../../website-sena-make-up/src/carrinho/assets/img/icons8-ok-50 1.png" alt="...">
+    </div>
 
 </body>
 

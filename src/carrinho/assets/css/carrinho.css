@@ -1,88 +1,270 @@
-section {
-  width: auto;
-  height: auto;
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-table {
+.main-address {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-address > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   width: 100%;
-  background: rgb(251, 251, 251);
+  min-height: 94vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
-thead {
+#text1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.box-address {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.box-logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+.box-logo p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.box-location {
+  display: flex;
+}
+
+hr {
+  align-self: center;
+  width: 60px;
+  margin: 0;
+  border: none;
+  background: #ccc;
+  height: 2px;
+  opacity: 1;
+}
+
+.box-location-icon {
+  border: 1px solid #ccc;
+  border-radius: 50%;
   padding: 10px;
 }
 
-thead,
-tbody {
-  width: 100%;
-  border-top: 1px solid #ff69b475;
-}
-
-tr {
+.box-location-icon span {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  width: auto;
+  height: auto;
+  padding: 4px;
 }
 
-th,
-td {
-  padding: 0px;
-  width: 12vw;
+.box-location-icon i {
+  display: flex;
+  color: #d7d7d7;
+  font-size: 30px;
+  font-style: normal;
 }
 
-td {
-  align-self: center;
+#box-first-icon {
+  border-color: #7fd8e7;
 }
 
-th:first-child,
-td:first-child {
-  min-width: 40vw;
+#icon-first {
+  color: #7fd8e7;
 }
 
-td:first-child {
+#second-icon {
+  color: #ff69b4;
+}
+
+div.box-location-icon:nth-of-type(2) {
+  border-color: #ff69b4;
+}
+
+.box-location-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.box-form-address fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e4e4e4;
+  padding: 0 16px 20px 16px;
+  width: auto;
+  border-radius: 6px;
+}
+
+legend {
+  position: relative;
+  top: -14px;
+  align-self: flex-start;
+  background-color: white;
+  width: max-content;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.address {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 34px;
 }
 
-.box-image-product {
-  width: 200px; /* Define a largura desejada */
-  height: auto; /* Altura ajusta automaticamente */
-  overflow: hidden; /* Oculta a parte extra da imagem */
-}
-
-.box-image-product img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ajusta o conteúdo visível sem distorcer */
-  display: block;
-}
-
-.box-description-product {
+.box-address-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.box-description-product > p:first-child {
-  font-weight: bold;
+.box-address-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.box-address-container > div input {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(180deg, #868686, #ececec);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: none;
+  padding: 4px;
+  width: 240px;
+  padding: 6px;
+}
+
+.box-name-delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.box-name-delivery input {
+  padding: 6px;
   font-size: 16px;
+  border-radius: 4px; /* Bordas arredondadas */
+  border: 1px solid transparent; /* Define a borda transparente para o gradiente */
+  background-image: linear-gradient(white, white),
+    /* Cor interna do input */ linear-gradient(180deg, #868686, #ececec); /* Gradiente preto para branco nas bordas */
+  background-origin: border-box; /* Faz o gradiente seguir a borda */
+  background-clip: padding-box, border-box; /* Aplica o gradiente nas bordas */
+  outline: none;
+}
+
+.button-choice {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.button-choice a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition: all 0.6s ease;
+}
+
+.button-choice a:hover {
+  text-decoration: none;
   color: #ff69b4;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
-.box-description-product p {
-  font-size: 12px;
-  margin: 0;
-}
-
-caption {
-  caption-side: top; /* Garante que o título esteja no topo */
-  font-size: 1.5em;
+.button-choice button {
+  background: #ff69b4;
   font-weight: bold;
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
-  color: #333;
-  text-align: center;
+  border-radius: 6px;
+  width: auto;
+  height: auto;
+  padding: 8px;
+}
+
+.button-choice button:hover {
+  background: #ff69b4;
+}
+
+.box-secure-payment-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-self: flex-end;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 1px solid #cccccc;
+  padding: 10px 40px 0 40px;
+}
+
+.box-secure-payment-info p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.box-payment {
+  width: 50%;
+}
+
+.box-payment img {
+  margin-left: 30px;
+}
+
+.box-secure-payment-info img {
+  width: 90px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.box-secure-info {
+  width: 50%;
+}
+
+.box-secure-info img {
+}
+
+.box-images {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

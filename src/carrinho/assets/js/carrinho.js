@@ -34,7 +34,7 @@ function toggleContent() {
         gsap.fromTo(
           borderBoxIcon,
           { borderColor: "#ff69b4" },
-          { borderColor: "#7fd8e7", duration: 0.3 }
+          { borderColor: "transparent", duration: 0.3 }
         );
 
         gsap.fromTo(
@@ -50,14 +50,8 @@ function toggleContent() {
         );
 
         gsap.fromTo(
-          borderBoxIcon,
-          { borderColor: "#ff69b4" },
-          { borderColor: "#7fd8e7", duration: 0.3 }
-        );
-
-        gsap.fromTo(
           borderThirdIcon,
-          { borderColor: "#ccc" },
+          { borderColor: "transparent" },
           { borderColor: "#ff69b4", duration: 0.3 }
         );
 
@@ -87,7 +81,7 @@ function toggleContent() {
 
         gsap.fromTo(
           borderBoxIcon,
-          { borderColor: "#7fd8e7" },
+          { borderColor: "transparent" },
           { borderColor: "#ff69b4", duration: 0.3 }
         );
 
@@ -106,7 +100,7 @@ function toggleContent() {
         gsap.fromTo(
           borderThirdIcon,
           { borderColor: "#ff69b4" },
-          { borderColor: "#ccc", duration: 0.3 }
+          { borderColor: "transparent", duration: 0.3 }
         );
 
         gsap.fromTo(

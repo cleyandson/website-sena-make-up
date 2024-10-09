@@ -66,7 +66,11 @@ hr {
 }
 
 .box-location-icon {
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(360deg, #d7d7d7, white);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   border-radius: 50%;
   padding: 10px;
 }
@@ -85,8 +89,8 @@ hr {
   font-style: normal;
 }
 
-#box-first-icon {
-  border-color: #7fd8e7;
+#box-second-icon {
+  border-color: #ff69b4;
 }
 
 #icon-first {
@@ -252,6 +256,57 @@ legend {
 .box-images {
   display: flex;
   gap: 30px;
+}
+
+/* --------------------SECTION 2 --------------------------- */
+
+.div-main {
+  display: flex;
+  justify-content: center;
+}
+
+.box-choose-payment-delivery {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.box-delivery-method {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 8px;
+}
+
+.delivery-method {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ececec;
+  width: 400px;
+  padding: 8px 24px;
+  font-weight: 400;
+}
+
+.delivery-method p {
+  margin-bottom: 0;
+}
+
+.box-delivery-method > p:last-child {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+.method-choose {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-order-summary {
+  width: auto;
+  height: auto;
 }
 
 button {

@@ -140,6 +140,7 @@ section {
 details {
   border-top: 1px solid #cccccc;
   padding: 16px 10px;
+  transition: all 0.8s ease;
 }
 details .text-information-product {
   opacity: 0;
@@ -182,6 +183,8 @@ summary {
 }
 
 summary > p {
+  font-weight: normal;
+  transition: all 0.8s ease;
   font-size: 18px;
   margin-bottom: 0;
 }

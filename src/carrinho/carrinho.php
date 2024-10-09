@@ -34,9 +34,9 @@
             </div>
         </div>
 
-        <section id="text1">
+        <section id="text1" style="display: none;">
             <div class="box-form-address">
-                <form action="#" method="get">
+                <form onsubmit="handleFormSubmit(event)">
                     <fieldset>
                         <legend>
                             Adicione um endereço de envio
@@ -90,11 +90,118 @@
             </div>
 
         </section>
-        <section id="text2" style="display: none;">
-            <p>Este é o segundo conteúdo. Clique no botão para voltar.</p>
-            <button id="toggleButton">Trocar Conteúdo</button>
 
 
+        <section id="text2" style="display: flex;">
+            <form class="div-main" onsubmit="handleFormSubmit(event)">
+                <div class="box-choose-payment-delivery">
+                    <div class="box-delivery-method">
+                        <div class="delivery-method">
+                            <p>Forma de entrega</p>
+
+                            <div class="method-choose">
+                                <div>
+                                    <input type="radio" id="normal" name="choose-method-delivery" value="normal">
+                                    <label for="normal">Normal (até 7 dias úteis)*</label>
+                                </div>
+                                <p>R$9,90</p>
+                            </div>
+                            <div class="method-choose">
+                                <div>
+                                    <input type="radio" id="retirada" name="choose-method-delivery" value="retirada">
+                                    <label for="retirada">Retirada</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p>* Prazo válido após aprovação do pagamento do pedido</p>
+                    </div>
+
+                    <div class="box-payment-method">
+                        <p>Selecione a Forma de Pagamento</p>
+
+                        <div class="method-choose">
+                            <input type="radio" id="cartao" name="choose-method-payment" value="cartao de credito">
+                            <label for="cartao">Pagar com Cartão de Crédito</label>
+                            <img src="..." alt="...">
+                        </div>
+                        <div class="method-choose">
+                            <input type="radio" id="pix" name="choose-method-payment" value="pix">
+                            <label for="pix">Pagar com Pix</label>
+                            <img src="..." alt="...">
+                        </div>
+
+                        <div class="box-info-pix">
+                            <ol>
+                                <li>Clique em "Finalizar Pedido";</li>
+                                <li>Na tela seguinte copie o código do pix;</li>
+                                <li>No app do seu banco, selecione a opção "Pagar com o PIX" e clie o código que você
+                                    copiou;</li>
+                                <li>Confire os dados e confirme o pagamento;</li>
+                                <li>Pronto! Agora envie o comprovante no nosso Whatsapp para agilizar o processo e o
+                                    pagamento foi feito com sucesso!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-order-summary">
+                    <div class="summary-price">
+                        <p>Resumo do pedido</p>
+                        <div class="summary-price-product">
+                            <div class="text-price">
+                                <p>Produto:</p>
+                                <p>(1 item)</p>
+                            </div>
+                            <div class="value-price">
+                                <p>R$29,15</p>
+                                <p>R$ 16,63</p>
+                            </div>
+                        </div>
+                        <div class="summary-price-product">
+                            <div class="text-price">
+                                <p>Frete</p>
+                            </div>
+                            <div class="value-price">
+                                <p>R$9,90</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="value-total">
+                            <div class="text-price">
+                                <p>Total do pedido</p>
+                            </div>
+                            <div class="value-price">
+                                <p>R$26,53</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="togsgleButton">Trocar Conteúdo</button>
+
+                    <div class="box-item-summary">
+                        <details>
+                            <summary>
+                                <p>Item do pedido <span>(1)</span></p>
+                                <img src="..." alt="">
+                            </summary>
+                            <div>
+                                <div class="box-image-name-product">
+                                    <img src="..." alt="">
+                                    <div>
+                                        <p>Porán Cosméticos</p>
+                                        <p>hidrataante melancia - corpo e rosto 145g</p>
+                                    </div>
+                                </div>
+                                <div class="price-product-summary">
+                                    <p>R$29,15</p>
+                                    <p>R$16,63</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </form>
         </section>
 
         <div class="box-secure-payment-info">

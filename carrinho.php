@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./src/heading/assets/css/header.css">
     <link rel="stylesheet" href="./src/carrinho/assets/css/carrinho.css">
+    <link rel="stylesheet" href="./src/carrinho/assets/css/carrinhoThirdScreen.css">
     <link rel="stylesheet" href="./src/footer/assets/css/footer.css">
 </head>
 

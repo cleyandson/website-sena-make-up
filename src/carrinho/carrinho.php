@@ -22,9 +22,9 @@
                     <span><i class="bi bi-credit-card-2-front" id="third-icon"></i></span>
                 </div>
 
-                <hr class="third-hr">
+                <hr class="third-hr" id="third-hr">
 
-                <div class="box-location-icon">
+                <div class="box-location-icon" id="box-fourth-icon">
                     <span><i class="bi bi-check-lg" id="fourth-icon"></i></span>
                 </div>
 
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <section id="text1" style="display: none;">
+        <section id="first-screen" style="display: flex;">
             <div class="box-form-address">
                 <form onsubmit="handleFormSubmit(event)">
                     <fieldset>
@@ -92,7 +92,7 @@
         </section>
 
 
-        <section id="text2" style="display: flex;">
+        <section class="second-section" id="second-screen" style="display: none;">
             <form class="div-main" onsubmit="handleFormSubmit(event)">
                 <div class="box-choose-payment-delivery">
                     <div class="box-delivery-method">
@@ -121,14 +121,20 @@
                         <p>Selecione a Forma de Pagamento</p>
 
                         <div class="method-choose">
-                            <input type="radio" id="cartao" name="choose-method-payment" value="cartao de credito">
-                            <label for="cartao">Pagar com Cartão de Crédito</label>
-                            <img src="..." alt="...">
+                            <div>
+                                <input type="radio" id="cartao" name="choose-method-payment" value="cartao de credito">
+                                <label for="cartao">Pagar com Cartão de Crédito</label>
+                            </div>
+                            <img src="../../../website-sena-make-up/src/carrinho/assets/img/icon-payment/icons8-frente-do-cartão-de-banco-50 1.png"
+                                alt="imagem de um cartão de credito na cor preta">
                         </div>
                         <div class="method-choose">
-                            <input type="radio" id="pix" name="choose-method-payment" value="pix">
-                            <label for="pix">Pagar com Pix</label>
-                            <img src="..." alt="...">
+                            <div>
+                                <input type="radio" id="pix" name="choose-method-payment" value="pix">
+                                <label for="pix">Pagar com Pix</label>
+                            </div>
+                            <img src="../../../website-sena-make-up/src/carrinho/assets/img/icon-payment/icons8-foto-50 1.png"
+                                alt="imagem do simbolo do pix na cor preta">
                         </div>
 
                         <div class="box-info-pix">
@@ -153,20 +159,23 @@
                                 <p>Produto:</p>
                                 <p>(1 item)</p>
                             </div>
-                            <div class="value-price">
-                                <p>R$29,15</p>
+                            <div class="text-price">
+                                <p class="value-price">R$29,15</p>
                                 <p>R$ 16,63</p>
                             </div>
                         </div>
                         <div class="summary-price-product">
                             <div class="text-price">
-                                <p>Frete</p>
+                                <p>Frete:</p>
                             </div>
-                            <div class="value-price">
+                            <div class="text-price">
                                 <p>R$9,90</p>
                             </div>
                         </div>
-                        <hr>
+
+                        <hr id="hr-summary-order">
+
+
                         <div class="value-total">
                             <div class="text-price">
                                 <p>Total do pedido</p>
@@ -176,18 +185,21 @@
                             </div>
                         </div>
                     </div>
-
-                    <button id="togsgleButton">Trocar Conteúdo</button>
+                    <div class="box-button-submit">
+                        <button type="submit" class="button-finish-buy" id="buttonFinish">Finalizar Pedido</button>
+                        <p>*Você será redirecionado para finalizar o pedido no WhatsApp</p>
+                    </div>
 
                     <div class="box-item-summary">
-                        <details>
+                        <details open>
                             <summary>
                                 <p>Item do pedido <span>(1)</span></p>
-                                <img src="..." alt="">
+                                <i class="bi bi-chevron-up"></i>
                             </summary>
-                            <div>
+                            <div class="box-summary-info-product">
                                 <div class="box-image-name-product">
-                                    <img src="..." alt="">
+                                    <img src="../../../website-sena-make-up/src/carrinho/assets/img/produto/Produto.png"
+                                        alt="foto da escolha do produto">
                                     <div>
                                         <p>Porán Cosméticos</p>
                                         <p>hidrataante melancia - corpo e rosto 145g</p>
@@ -202,7 +214,40 @@
                     </div>
                 </div>
             </form>
+
         </section>
+
+        <section id="third-screen" style="display: none;">
+            <div class="tittle-information">
+                <p>Falta pouco! Finalize seu pedido no Whatsapp!</p>
+                <p>Seu pedido está quase finalizado. Agora, siga as instruções abaixo para concluir o pagamento via
+                    WhatsApp</p>
+            </div>
+            <div class="information-whatsapp">
+                <div class="box-qr-code">
+                    <img src="../../../website-sena-make-up/src/carrinho/assets/img/Desktop/QRCode_Fácil (1) 1.png"
+                        alt="Imagem do qr-code">
+                    <a href="#">Copiar número do Whatsapp</a>
+                </div>
+                <div class="step-by-step-whatsapp">
+                    <ol>
+                        <li>Clique no botão para abrir o Whatsapp ou escaneie o QR Code</li>
+                        <li>Envie a mensagem automática que aparecerá no chat para atendimento</li>
+                        <li>Confirme os detalhes do seu pedido com nossa equipe no WhatsApp</li>
+                        <li>Realize o pagamento e siga as instruções para realizar o pagamento
+                            de forma segura.</li>
+                        <li>Envie o comprovante diretamente no chat do Whatsapp para que
+                            possamos agilizar a sua entrega!</li>
+                        <li><a href="#">Preciso de ajuda para realizar o pagamento</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="box-number-order">
+                <p>Nuúmero do pedido:</p>
+                <p>7050278</p>
+            </div>
+        </section>
+        <p id="buttonBack" style="display: none;">Voltar</p>
 
         <div class="box-secure-payment-info">
             <div class="box-payment">

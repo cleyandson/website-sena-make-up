@@ -20,6 +20,10 @@ const thirdHr = document.getElementById("third-hr");
 // Função para animar a saída de um conteúdo e entrada de outro
 
 function backPage() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Adiciona um efeito de rolagem suave
+  });
   if (
     firstScreen.style.display === "none" &&
     secondScreen.style.display === "block"
@@ -128,6 +132,10 @@ function backPage() {
 }
 
 function toggleContent() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Adiciona um efeito de rolagem suave
+  });
   if (
     firstScreen.style.display === "none" &&
     secondScreen.style.display === "block"
@@ -178,6 +186,7 @@ function toggleContent() {
         );
       },
     });
+    redirectSecond();
     return;
   }
 
@@ -191,6 +200,7 @@ function toggleContent() {
         firstScreen.style.display = "none";
         secondScreen.style.display = "block";
         buttonBack.style.display = "block";
+        itemsBag();
 
         // Animação de entrada para o segundo conteúdo
         gsap.fromTo(
@@ -291,3 +301,34 @@ function toggleContent() {
 toggleButton.addEventListener("click", toggleContent);
 buttonAdvance.addEventListener("click", toggleContent);
 buttonBack.addEventListener("click", backPage);
+function redirectSecond() {
+  const textSeconds = document.getElementById("textSeconds");
+  let counter = 10; // Valor inicial do contador
+
+  // Define o intervalo para diminuir o contador a cada segundo
+  const interval = setInterval(function () {
+    textSeconds.innerText = counter; // Atualiza o valor no HTML
+    counter--; // Diminui o valor do contador
+
+    // Para o contador quando chegar a zero
+    if (counter < 0) {
+      clearInterval(interval); // Cancela o intervalo
+      textSeconds.innerText = "Se você não foi redirecionado clique aqui"; // Exibe uma mensagem
+    }
+  }, 1000); // A cada 1000 ms (1 segundo)
+}
+
+function itemsBag() {
+  let items = localStorage.getItem("cartItems")
+    ? parseInt(localStorage.getItem("cartItems"))
+    : 0;
+  const amountItem = document.getElementById("amountItem");
+  const amountItemSpan = document.getElementById("amountItemSpan");
+
+  if (items > 1) {
+    amountItem.innerText = `(${items} itens)`;
+  } else {
+    amountItem.innerText = `(${items} item)`;
+  }
+  amountItemSpan.innerText = `(${items})`;
+}

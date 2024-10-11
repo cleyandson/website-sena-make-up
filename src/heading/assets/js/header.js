@@ -63,6 +63,7 @@ function verificarLarguraTela() {
 
   // Aqui você pode adicionar sua lógica específica
   if (largura > 991) {
+    console.log("oi");
     if (boxList.classList.contains("box-list-open")) {
       boxSearch.style.display = "block";
       boxList.classList.remove("box-list-open");
@@ -71,13 +72,48 @@ function verificarLarguraTela() {
       iconMenu.classList.add("bi-list");
     }
     boxList.style.display = "block";
-  } else {
-    if (!iconMenu.classList.contains("bi-x-lg")) {
-      boxList.style.display = "none";
-    }
   }
 }
 
 // Chame a função ao carregar a página
-//window.onload = verificarLarguraTela;/
-//window.onresize = verificarLarguraTela;
+window.onload = verificarLarguraTela;
+window.onresize = verificarLarguraTela;
+
+let counter = localStorage.getItem("cartItems")
+  ? parseInt(localStorage.getItem("cartItems"))
+  : 0;
+
+// Atualiza o valor inicial do carrinho na página
+document.getElementById("item-bag").innerText = counter;
+
+const buttons = document.querySelectorAll(".productBag");
+const boxItemBag = document.getElementById("box-item-bag");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    counter++; // Incrementa o valor do contador
+    document.getElementById("item-bag").innerText = counter; // Atualiza o valor no HTML
+    localStorage.setItem("cartItems", counter); // Salva o novo valor no localStorage
+    displayBoxItemBag();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Adiciona um efeito de rolagem suave
+    });
+  });
+});
+
+if (counter > 0) {
+  boxItemBag.style.display = "flex";
+} else {
+  console.log("tou aq");
+  boxItemBag.style.display = "none";
+}
+
+function displayBoxItemBag() {
+  if (counter > 0) {
+    boxItemBag.style.display = "flex";
+  } else {
+    console.log("euu");
+    boxItemBag.style.display = "none";
+  }
+}

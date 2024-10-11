@@ -164,19 +164,37 @@
 
 .box-button-buy {
   display: flex;
-  justify-content: center;
-  width: 80%;
-  background-color: #ff69b4;
-  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 4px;
 }
 
 .button-buy {
   color: #fff;
+  border-radius: 4px;
   font-weight: bold;
   background-color: #ff69b4;
   text-align: center;
-  padding: 8px 6px;
+  padding: 6px 4px;
   border: none;
+  width: 60%;
+}
+
+.box-button-buy i {
+  padding: 6px 4px;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box-button-buy i:hover {
+  transition: all 0.3s ease;
+  background: #ff69b4;
+  border-radius: 4px;
+  padding: 2px 8px;
+  color: white;
 }
 
 .box-banner {
@@ -191,17 +209,19 @@
 
 @media (max-width: 576px) {
   .box-button-buy {
-    width: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     font-size: 12px;
     padding: 0px 0px;
     height: auto;
-    width: auto;
     margin-bottom: 4px;
   }
 
   .button-buy {
     border-radius: 6px;
-    padding: 4px;
+    padding: 10px;
+    width: 50%;
   }
 
   .box-favorites {

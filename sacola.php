@@ -20,8 +20,8 @@
     <main>
 
         <!-- Se tiver produto na sacola mostra a 2 section, SE NÃO mostra a primeira section <!-->
-        <section>
-            <div class="box-empty-bag">
+        <section id="section-bag-empty">
+            <div class=" box-empty-bag">
                 <div class="box-img-empty-bag">
                     <img src="../website-sena-make-up/src/sacola/assets/img/icons8-vilta-frontal-da-bolsa-100 1.png"
                         alt="">
@@ -38,9 +38,9 @@
             </div>
         </section>
 
-        <section>
+        <section id="section-bag-full" style="display: none;">
             <div class="box-full-bag">
-                <p>Sacola (1 produto)</p>
+                <p id="productsBag">Sacola (1 produto)</p>
                 <div class="box-term">
                     <p>Estime frete e prazo</p>
                     <form action="" method="get" class="box-form-term">
@@ -85,7 +85,7 @@
                                 <div class="column-quantidade">
                                     <input type="number" id="quantidade" name="quantidade" min="1" max="20" step="1"
                                         value="1">
-                                    <p>Remover</p>
+                                    <p class="remove-item">Remover</p>
                                 </div>
                             </td>
                             <td>
@@ -102,7 +102,7 @@
                 <a href="carrinho.php" class="button-finish-buy">Finalizar compra</a>
                 <div class="box-info-price">
                     <div class="price-product">
-                        <p>Produto: <span>(1 item)</span></p>
+                        <p>Produto: <span id="productsBagSpan">(1 item)</span></p>
                         <p><span>R$29,15</span>R$16,63</p>
                     </div>
                     <div class="box-term">
@@ -126,6 +126,7 @@
 
     </script>
     <script src="./src/heading/assets/js/header.js"></script>
+    <script src="./src/sacola/assets/js/sacola.js"></script>
 
 </body>
 

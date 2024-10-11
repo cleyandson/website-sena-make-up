@@ -31,121 +31,45 @@
         <h2>Descubra as novidades</h2>
         <div class="box-content">
 
+
+            <!-- ESSE BLOCO ABAIXO PHP É RESPONSAVEL POR CRIAR 4 DIVS IGUAIS, TROCAR O FOR POR FOREACH PARA PEGAR INFO DO BANCO DE DADOS    -->
+            <?php
+            for ($i = 0; $i < 4; $i++) {
+            ?>
             <div class="box-product">
+                <div class="box-favorites">
+                    <button><i class="bi bi-heart"></i></button>
+                </div>
                 <a href="produto.php">
-                    <div class="box-favorites">
-                        <button><i class="bi bi-heart"></i></button>
-                    </div>
                     <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
                         alt="imagem do produto">
-                    <div class="box-description-product">
-                        <h5>Porán - Hidratante Melância</h5>
-                        <p class="">Corpo & Rosto - 145g</p>
-                        <div class="box-price">
-                            <p class="">R$29,15</p>
-                            <p class=""><strong>R$16,63</strong></p>
-                        </div>
-                        <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas
-                            A, C
-                            e licopeno, deixa a
-                            pele
-                            macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                            prolongando
-                            sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                    </div>
-                    <div class="box-button-buy">
-                        <a href="produto.php">
-                            <button class="button-buy">Comprar Agora</button>
-                        </a>
-                    </div>
                 </a>
+                <div class="box-description-product">
+                    <h5>Porán - Hidratante Melância</h5>
+                    <p class="">Corpo & Rosto - 145g</p>
+                    <div class="box-price">
+                        <p class="">R$29,15</p>
+                        <p class=""><strong>R$16,63</strong></p>
+                    </div>
+                    <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas
+                        A, C
+                        e licopeno, deixa a
+                        pele
+                        macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
+                        prolongando
+                        sua duração. Enriquecido com extrato de camomila e colágeno.</p>
+                </div>
+                <div class="box-button-buy">
+                    <button onclick="location.href='produto.php'" class="button-buy">Comprar Agora</button>
+
+                    <i class="bi bi-handbag productBag"></i>
+                </div>
             </div>
+            <?php
+            }
+            ?>
 
-            <div class="box-product">
-                <a href="produto.php">
-                    <div class="box-favorites">
-                        <button><i class="bi bi-heart"></i></button>
-                    </div>
-                    <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                        alt="imagem do produto">
-                    <div class="box-description-product">
-                        <h5>Porán - Hidratante Melância</h5>
-                        <p class="">Corpo & Rosto - 145g</p>
-                        <div class="box-price">
-                            <p class="">R$29,15</p>
-                            <p class=""><strong>R$16,63</strong></p>
-                        </div>
-                        <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas
-                            A, C
-                            e licopeno, deixa a
-                            pele
-                            macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                            prolongando
-                            sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                    </div>
-                    <div class="box-button-buy">
-                        <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
-                    </div>
-                </a>
-            </div>
-
-            <div class="box-product">
-                <a href="produto.php">
-                    <div class="box-favorites">
-                        <button><i class="bi bi-heart"></i></button>
-                    </div>
-                    <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                        alt="imagem do produto">
-                    <div class="box-description-product">
-                        <h5>Porán - Hidratante Melância</h5>
-                        <p class="">Corpo & Rosto - 145g</p>
-                        <div class="box-price">
-                            <p class="">R$29,15</p>
-                            <p class=""><strong>R$16,63</strong></p>
-                        </div>
-                        <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas
-                            A, C
-                            e licopeno, deixa a
-                            pele
-                            macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                            prolongando
-                            sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                    </div>
-                    <div class="box-button-buy">
-                        <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
-                    </div>
-                </a>
-            </div>
-
-            <div class="box-product">
-                <a href="produto.php">
-                    <div class="box-favorites">
-                        <button><i class="bi bi-heart"></i></button>
-                    </div>
-                    <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                        alt="imagem do produto">
-                    <div class="box-description-product">
-                        <h5>Porán - Hidratante Melância</h5>
-                        <p class="">Corpo & Rosto - 145g</p>
-                        <div class="box-price">
-                            <p class="">R$29,15</p>
-                            <p class=""><strong>R$16,63</strong></p>
-                        </div>
-                        <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas
-                            A, C
-                            e licopeno, deixa a
-                            pele
-                            macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                            prolongando
-                            sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                    </div>
-                    <div class="box-button-buy">
-                        <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
-                    </div>
-                </a>
-            </div>
-
-
+            <!-- ESSE BLOCO ACIMA PHP É RESPONSAVEL POR CRIAR 4 DIVS IGUAIS, TROCAR O FOR POR FOREACH PARA PEGAR INFO DO BANCO DE DADOS    -->
         </div>
     </div>
 
@@ -155,12 +79,18 @@
         <h2>Mais Vendidos</h2>
 
         <div class="box-content">
-            <div class="box-product" onclick="location.href ='produto.php'">
+            <!-- ESSE BLOCO ABAIXO PHP É RESPONSAVEL POR CRIAR 4 DIVS IGUAIS, TROCAR O FOR POR FOREACH PARA PEGAR INFO DO BANCO DE DADOS    -->
+            <?php
+            for ($i = 0; $i < 4; $i++) {
+            ?>
+            <div class="box-product">
                 <div class="box-favorites">
                     <button><i class="bi bi-heart"></i></button>
                 </div>
-                <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                    alt="imagem do produto">
+                <a href="produto.php">
+                    <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
+                        alt="imagem do produto">
+                </a>
                 <div class="box-description-product">
                     <h5>Porán - Hidratante Melância</h5>
                     <p class="">Corpo & Rosto - 145g</p>
@@ -168,7 +98,8 @@
                         <p class="">R$29,15</p>
                         <p class=""><strong>R$16,63</strong></p>
                     </div>
-                    <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas A, C
+                    <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas
+                        A, C
                         e licopeno, deixa a
                         pele
                         macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
@@ -176,84 +107,16 @@
                         sua duração. Enriquecido com extrato de camomila e colágeno.</p>
                 </div>
                 <div class="box-button-buy">
-                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
-                </div>
-            </div>
+                    <button onclick="location.href='produto.php'" class="button-buy">Comprar Agora</button>
 
-            <div class="box-product" onclick="location.href ='produto.php'">
-                <div class="box-favorites">
-                    <button><i class="bi bi-heart"></i></button>
-                </div>
-                <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                    alt="imagem do produto">
-                <div class="box-description-product">
-                    <h5>Porán - Hidratante Melância</h5>
-                    <p class="">Corpo & Rosto - 145g</p>
-                    <div class="box-price">
-                        <p class="">R$29,15</p>
-                        <p class=""><strong>R$16,63</strong></p>
-                    </div>
-                    <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas A, C
-                        e licopeno, deixa a
-                        pele
-                        macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                        prolongando
-                        sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                </div>
-                <div class="box-button-buy">
-                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
+                    <i class="bi bi-handbag productBag"></i>
                 </div>
             </div>
+            <?php
+            }
+            ?>
 
-            <div class="box-product" onclick="location.href ='produto.php'">
-                <div class="box-favorites">
-                    <button><i class="bi bi-heart"></i></button>
-                </div>
-                <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                    alt="imagem do produto">
-                <div class="box-description-product">
-                    <h5>Porán - Hidratante Melância</h5>
-                    <p class="">Corpo & Rosto - 145g</p>
-                    <div class="box-price">
-                        <p class="">R$29,15</p>
-                        <p class=""><strong>R$16,63</strong></p>
-                    </div>
-                    <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas A, C
-                        e licopeno, deixa a
-                        pele
-                        macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                        prolongando
-                        sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                </div>
-                <div class="box-button-buy">
-                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
-                </div>
-            </div>
-
-            <div class="box-product" onclick="location.href ='produto.php'">
-                <div class="box-favorites">
-                    <button><i class="bi bi-heart"></i></button>
-                </div>
-                <img src="../../../website-sena-make-up/src/main/assets/img/bruma-glow-melancia-lady-beauty-removebg-preview 1.jpg"
-                    alt="imagem do produto">
-                <div class="box-description-product">
-                    <h5>Porán - Hidratante Melância</h5>
-                    <p class="">Corpo & Rosto - 145g</p>
-                    <div class="box-price">
-                        <p class="">R$29,15</p>
-                        <p class=""><strong>R$16,63</strong></p>
-                    </div>
-                    <p class="text-description-product">Hidratante Porán Melancia Corpo & Rosto, rico em vitaminas A, C
-                        e licopeno, deixa a
-                        pele
-                        macia e aveludada, combatendo o envelhecimento precoce. Auxilia na fixação da maquiagem,
-                        prolongando
-                        sua duração. Enriquecido com extrato de camomila e colágeno.</p>
-                </div>
-                <div class="box-button-buy">
-                    <a href="produto.php"><button class="button-buy">Comprar Agora</button></a>
-                </div>
-            </div>
+            <!-- ESSE BLOCO ACIMA PHP É RESPONSAVEL POR CRIAR 4 DIVS IGUAIS, TROCAR O FOR POR FOREACH PARA PEGAR INFO DO BANCO DE DADOS    -->
         </div>
     </div>
 

@@ -39,7 +39,7 @@
                         <p>R$16,63</p>
                         <p>3x R$5,54</p>
                     </div>
-                    <a href="sacola.php" class="button-buy">Comprar</a>
+                    <a href="sacola.php" id="buttonBuy" class="button-buy">Comprar</a>
                     <div class="box-share-product">
                         <p>Compartilhe</p>
                         <div class="box-icons-share">
@@ -116,6 +116,7 @@
 
     </script>
     <script src="./src/heading/assets/js/header.js"></script>
+    <script src="./src/produto/assets/js/produto.js"></script>
 
 </body>
 

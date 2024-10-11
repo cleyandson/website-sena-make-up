@@ -46,9 +46,28 @@
                         <img src="../../../website-sena-make-up/src/heading/img/Desktop/icons8-vilta-frontal-da-bolsa-50.png"
                             alt="">
                         <span class="ms-1">Sacola</span>
+
                     </a>
+                    <div id="box-item-bag" class="item-bag">
+                        <span id="item-bag">0</span>
+                    </div>
                 </li>
 
             </ul>
         </div>
+
+    </nav>
+    <div class="pages">
+        <ul>
+            <li>Promoções</li>
+            <li>Marcas</li>
+            <li>Mais Vendidos</li>
+            <li>Skincare</li>
+            <li>Base</li>
+            <li>Gloss</li>
+            <li>Delineadores</li>
+            <li>Contornos</li>
+            <li>Outras Categorias</li>
+        </ul>
+    </div>
 </header>

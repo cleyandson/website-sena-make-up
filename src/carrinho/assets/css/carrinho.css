@@ -647,6 +647,7 @@ details:not([open]) summary i {
 
   .box-order-summary {
     width: 600px;
+    height: fit-content;
   }
 
   .box-choose-payment-delivery {

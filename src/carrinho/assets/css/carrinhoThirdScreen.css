@@ -98,6 +98,23 @@
   font-weight: bolder;
 }
 
+.box-seconds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-seconds a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.box-seconds p {
+  color: #ccc;
+  margin-bottom: 0;
+}
+
 @media (min-width: 576px) {
 }
 

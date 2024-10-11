@@ -19,3 +19,5 @@ cards.forEach((card) => {
     btnBuy.style.display = "none"; // Esconde o botão
   });
 });
+
+// Alterar valor do carrinho

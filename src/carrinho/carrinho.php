@@ -157,7 +157,7 @@
                         <div class="summary-price-product">
                             <div class="text-price">
                                 <p>Produto:</p>
-                                <p>(1 item)</p>
+                                <p id="amountItem">(1 item)</p>
                             </div>
                             <div class="text-price">
                                 <p class="value-price">R$29,15</p>
@@ -193,7 +193,7 @@
                     <div class="box-item-summary">
                         <details open>
                             <summary>
-                                <p>Item do pedido <span>(1)</span></p>
+                                <p>Item do pedido <span id="amountItemSpan">(1)</span></p>
                                 <i class="bi bi-chevron-up"></i>
                             </summary>
                             <div class="box-summary-info-product">
@@ -241,6 +241,10 @@
                         <li><a href="#">Preciso de ajuda para realizar o pagamento</a></li>
                     </ol>
                 </div>
+            </div>
+            <div class="box-seconds">
+                <a href="https://web.whatsapp.com/" id="textSeconds">10</a>
+                <p>Você será redirecionado para Whatsapp</p>
             </div>
             <div class="box-number-order">
                 <p>Nuúmero do pedido:</p>

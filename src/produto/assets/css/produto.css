@@ -133,6 +133,10 @@ section {
   object-fit: cover;
 }
 
+.box-icons-share a {
+  color: transparent;
+}
+
 .box-content {
   width: 100%;
 }

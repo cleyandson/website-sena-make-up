@@ -14,7 +14,7 @@ main {
 }
 
 .box-empty-bag {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -48,10 +48,12 @@ main {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .box-back-home a:hover {
   color: #ff69b4;
+  transition: all 0.3s ease;
 }
 
 .box-img-empty-bag {
@@ -73,7 +75,8 @@ main {
 /* Sacola com produto */
 
 section:first-child {
-  display: none;
+  display: block;
+  width: 100%;
 }
 
 section:last-child {
